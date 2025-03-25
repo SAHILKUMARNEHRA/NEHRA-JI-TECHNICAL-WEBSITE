@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehra Ji Technical - My Tech Website</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- I added Font Awesome for icons, makes the site look cool! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with my logo and navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <!-- My logo image, made it round with border-radius -->
+                <img style="border-radius: 50%;" src="./logo.jpg" alt="Nehra Ji Technical">
+                <span>NEHRA JI TECHNICAL</span>
+            </div>
+            <!-- Navigation links to different sections -->
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#smartphone-recommendation">Smartphone Recommendation</a></li>
+                <li><a href="#whatsapp-group">Join WhatsApp Group</a></li>
+                <li><a href="#tech-news">Tech News</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Subscribe button for my YouTube channel -->
+            <a href="https://youtube.com/@nehrajitechnical" class="subscribe-btn" target="_blank">
+                <i class="fab fa-youtube"></i> Subscribe
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero section, I wanted something big and bold -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Nehra Ji Technical</h1>
+            <p style="text-align: center;">Unboxing The Future</p>
+        </div>
+    </section>
+
+    <!-- Smartphone recommendation section, I made this to help my viewers -->
+    <section id="smartphone-recommendation" class="smartphone-recommendation">
+        <h2>Smartphone Recommendation</h2>
+        <div class="recommendation-container">
+            <!-- Form to enter budget -->
+            <form id="budgetForm">
+                <label for="budget">Enter Your Budget (INR):</label>
+                <input type="number" id="budget" placeholder="e.g., 20000" required>
+                <button type="submit">Find Smartphones</button>
+            </form>
+            <!-- Results will show here -->
+            <div id="recommendationResults" class="recommendation-results">
+                <!-- JavaScript will fill this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp group section, I want my viewers to join! -->
+    <section id="whatsapp-group" class="whatsapp-group">
+        <h2>Join Our WhatsApp Group for Latest Updates</h2>
+        <p>Stay updated with the latest tech news and updates by joining our WhatsApp group!</p>
+        <a href="PASTE_YOUR_WHATSAPP_GROUP_LINK_HERE" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> Join Now
+        </a>
+        <!-- I need to paste my WhatsApp group link here -->
+        <!-- Replace "PASTE_YOUR_WHATSAPP_GROUP_LINK_HERE" with the actual link -->
+    </section>
+
+    <!-- New section for latest tech news and launches -->
+    <section id="tech-news" class="tech-news">
+        <h2>Latest Tech News & Launches</h2>
+        <div class="news-container" id="techNews">
+            <!-- JavaScript will add news articles here -->
+        </div>
+    </section>
+
+    <!-- Latest videos section, I want to show my 3 latest videos here -->
+    <section class="featured-video">
+        <h2>Latest Videos</h2>
+        <div class="video-container">
+            <div class="video-row" id="latestVideos">
+                <!-- JavaScript will add my latest videos here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent videos section, I want to show more videos here -->
+    <section id="videos" class="video-grid">
+        <h2>Recent Videos</h2>
+        <div class="grid-container">
+            <!-- JavaScript will add videos here -->
+            <!-- I can also add videos manually if I want -->
+            <!-- Example: -->
+            <!--
+            <div class="video-card">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                <h3>Video Title</h3>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- About section, I want to tell my viewers about my channel -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="./banner.png" alt="Channel Banner">
+            <div class="about-text">
+                <p>नमस्कार दोस्तों,<br>
+                    आपका बहुत बहुत स्वागत है हमारे चैनल "NEHRA JI TECHNICAL" में! मैंने यह चैनल मेरे उन सभी दोस्तों के लिए बनाया है जो टेक्नोलॉजी के बारे में अपनी भाषा में जानना चाहते है। "NEHRA JI TECHNICAL" चैनल में आपको रोज़ाना एक नयी वीडियो मिलेगी जहा मैं कोशिश करूँगा आपको मोबाइल और कंप्यूटर की दुनिया के बारे में कुछ जरुरी बातें बताने की।<br><br>
+                    Hello friends, Welcome to "NEHRA JI TECHNICAL"! I created this channel on 13th June 2021. My motive is to make easy-to-understand Tech Videos in Hindi, and I want everyone interested in technology to understand it in the easiest way possible. I post one video daily on topics that cover the latest technology and tech news. Please SUBSCRIBE to NEHRA JI TECHNICAL, Thanks.<br><br>
+                    जय हिन्द, वन्दे मातरम|<br><br>
+                    NEHRA JI TECHNICAL  Provide tech support over e-mail
+                    our email address : sk.nehra2005@GMAIL.COM
+                    | LIKE |SHARE | SUBSCRIBE |
+                    THANKS | <br>
+                    NEHRA JI TECHNICAL
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section, so viewers can reach out to me -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer with social media links -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://youtube.com/@nehrajitechnical"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/nehrajitechnical?igsh=cGJubjlscnVmamdw"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/nehrajitechnical"><i class="fab fa-telegram"></i></a>
+                <a href="https://chat.whatsapp.com/HvQx2ALIYE8K9dnF6oeFs5"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>© 2025 NEHRA JI TECHNICAL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts for functionality -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="./smartphones.js"></script>
+    <script src="./script.js"></script>
+    <!-- I found this script online, I think it’s for security or something -->
+    <script>
+        (function(){
+            function c(){
+                var b=a.contentDocument||a.contentWindow.document;
+                if(b){
+                    var d=b.createElement('script');
+                    d.innerHTML="window.__CF$cv$params={r:'9260e4a5fe23676b',t:'MTc0MjkzMTc2NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName('head')[0].appendChild(d)
+                }
+            }
+            if(document.body){
+                var a=document.createElement('iframe');
+                a.height=1;
+                a.width=1;
+                a.style.position='absolute';
+                a.style.top=0;
+                a.style.left=0;
+                a.style.border='none';
+                a.style.visibility='hidden';
+                document.body.appendChild(a);
+                if('loading'!==document.readyState)c();
+                else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);
+                else{
+                    var e=document.onreadystatechange||function(){};
+                    document.onreadystatechange=function(b){
+                        e(b);
+                        'loading'!==document.readyState&&(document.onreadystatechange=e,c())
+                    }
+                }
+            }
+        })();
+    </script>
+</body>
+</html>

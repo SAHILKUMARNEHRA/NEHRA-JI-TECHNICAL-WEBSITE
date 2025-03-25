@@ -1,0 +1,335 @@
+/* My custom colors, I picked these because they look good */
+:root {
+    --primary: #ff0000; /* Red for buttons */
+    --secondary: #1a1a1a; /* Dark for the navbar */
+    --accent: #00ff00; /* I might use this later */
+    --text-light: #ffffff; /* White text */
+    --text-dark: #333333; /* Dark text */
+}
+
+/* Resetting margins and stuff */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    background: var(--secondary);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* I want the navbar to stay at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* So it stays above other elements */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--text-light);
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem; /* Space between links */
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s; /* I added a hover effect */
+}
+
+.subscribe-btn {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: transform 0.3s; /* Makes it pop a bit on hover */
+}
+
+/* Hero section, I wanted it to look big and cool */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(195, 181, 181, 0.7), rgba(0,0,0,0.4)), url('./table\ wall.webp');
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Smartphone recommendation section */
+.smartphone-recommendation {
+    padding: 4rem 5%;
+    background: #f9f9f9; /* Light background to make it stand out */
+}
+
+.recommendation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#budgetForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#budgetForm label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#budgetForm input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#budgetForm button {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.recommendation-results {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Added a shadow for depth */
+}
+
+.recommendation-results h3 {
+    margin-bottom: 1rem;
+}
+
+.recommendation-results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommendation-results li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* WhatsApp group section */
+.whatsapp-group {
+    padding: 2rem 5%;
+    text-align: center;
+    background: #e0f7fa; /* Light blue background */
+}
+
+.whatsapp-group h2 {
+    margin-bottom: 1rem;
+}
+
+.whatsapp-group p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.whatsapp-btn {
+    background: #25D366; /* WhatsApp green */
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe52; /* Darker green on hover */
+}
+
+/* Tech news section */
+.tech-news {
+    padding: 4rem 5%;
+    background: #f9f9f9; /* Same light background as other sections */
+}
+
+.news-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    max-height: 400px; /* I want it to be scrollable */
+    overflow-y: auto; /* Add scrollbar if there’s too much content */
+}
+
+.news-item {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.news-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.news-item a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+/* Video sections */
+.featured-video, .video-grid {
+    padding: 4rem 5%;
+    color: #000;
+}
+
+.video-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    color: #000;
+}
+
+.video-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.video-row iframe {
+    width: 30%;
+    height: 200px;
+}
+
+/* For smaller screens, I want videos to stack */
+@media (max-width: 768px) {
+    .video-row iframe {
+        width: 100%;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 videos in a row */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Responsive grid for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.video-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    color: #000;
+}
+
+/* About section */
+.about {
+    padding: 4rem 5%;
+    background: #f9f9f9;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Contact section */
+.contact {
+    padding: 4rem 5%;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    background: var(--secondary);
+    color: var(--text-light);
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--text-light);
+    font-size: 1.5rem;
+}
